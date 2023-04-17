@@ -1,6 +1,6 @@
 using MonotonicHermite, Plots
 
-xs=cumsum(rand(5))
+xs=cumsum([1e-2;rand(5)])
 ys=log.(xs)
 zs=inv.(xs)
 
