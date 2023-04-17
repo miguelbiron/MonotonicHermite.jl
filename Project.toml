@@ -1,6 +1,6 @@
 name = "MonotonicHermite"
 uuid = "8575fd88-6e2f-4255-b26c-26714c59bc7e"
-authors = ["Miguel Biron-Lattes <miguelbl9@gmail.com>"]
+authors = ["Miguel Biron-Lattes <miguel.biron@stat.ubc.ca>"]
 version = "0.1.0"
 
 [deps]
