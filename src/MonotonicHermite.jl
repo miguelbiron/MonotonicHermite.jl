@@ -35,7 +35,7 @@ function MonotonicCubicHermite(
         S  = dy/dx                                         # slope in the current interval
         
         # adjust derivatives
-        i == 1 && (zₗ = derivative_correction(zₗ, S, S)) 
+        i == 1 && (zₗ = derivative_correction(zₗ, S, S))   # zₗ is already fixed (==zᵣ of previous step) except for the 1st iteration
         S₊ = i == N ? S : (ys[i+2] - yᵣ) / (xs[i+2] - xᵣ)  # slope of the next interval, default to current if at extreme (see first paragraph after eq 4.2)
         zᵣ = derivative_correction(zᵣ, S, S₊)
 

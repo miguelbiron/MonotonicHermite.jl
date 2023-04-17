@@ -8,3 +8,14 @@ mch = MonotonicCubicHermite(xs,ys,zs)
 
 scatter(xs,ys)
 plot!(x->mch(x))
+
+using Distributions
+
+d  = Beta(1/2,1/2)
+xs = 10. .^ range(-3,-1)
+xs = [0.;xs;reverse(1 .- xs);1.]
+ys = cdf(d, xs)
+zs = map(x->pdf(d,x), xs)
+mch = MonotonicCubicHermite(xs,ys,zs)
+scatter(xs,ys)
+plot!(x->mch(x))
