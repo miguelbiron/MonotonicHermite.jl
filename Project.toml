@@ -1,0 +1,7 @@
+name = "MonotonicHermite"
+uuid = "8575fd88-6e2f-4255-b26c-26714c59bc7e"
+authors = ["Miguel Biron-Lattes <miguelbl9@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+SearchSortedNearest = "e8f3a9d7-1e19-435f-864b-2435d14e4e17"
